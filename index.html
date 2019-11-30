@@ -18,10 +18,6 @@
     </div>
     <br><br>
     <div class="wrapper">
-        <div id="vis1"></div>
-    </div>
-    <br><br>
-    <div class="wrapper">
         <div id="vis2"></div>
     </div>
     <br><br>
@@ -36,14 +32,19 @@
     <div class="wrapper">
         <div id="vis5"></div>
     </div>
+    <br><br>
+    <div class="wrapper">
+        <div id="vis1"></div>
+    </div>
 
     <script>
         new roughViz.StackedBar({
             element: '#vis0',
             data: [
-                {month: 'Sep-to-Oct','ESXi USB NIC':260,'vCenter Event Broker Appliance':0,'ESXi Virtual Appliance':599,'Cross vCenter vMotion':546,'ESXi dvFilter':92},
-{month: 'Oct-to-Nov','ESXi USB NIC':66,'vCenter Event Broker Appliance':1,'ESXi Virtual Appliance':119,'Cross vCenter vMotion':132,'ESXi dvFilter':14},
-{month: 'Nov-to-Nov','ESXi USB NIC':51,'vCenter Event Broker Appliance':26,'ESXi Virtual Appliance':141,'Cross vCenter vMotion':181,'ESXi dvFilter':19},
+                {month: 'May-to-Aug','ESXi dvFilter':278,'Cross vCenter vMotion':1645,'vCenter Event Broker Appliance':0,'ESXi USB NIC':755},
+{month: 'Sep-to-Oct','ESXi dvFilter':92,'Cross vCenter vMotion':546,'vCenter Event Broker Appliance':0,'ESXi USB NIC':260},
+{month: 'Oct-to-Nov','ESXi dvFilter':14,'Cross vCenter vMotion':132,'vCenter Event Broker Appliance':1,'ESXi USB NIC':66},
+{month: 'Nov-to-Nov','ESXi dvFilter':19,'Cross vCenter vMotion':181,'vCenter Event Broker Appliance':26,'ESXi USB NIC':51},
 
             ],
             labels: 'month',
@@ -53,11 +54,10 @@
             roughness: 2,
             colors: [
                 'skyblue',
-                '#66c2a5',
-                '#ffd92f',
-                '#8da0cb',
-                '#e78ac3',
-                '#a6d854',
+                '#a6d854', /* light green */
+                '#e78ac3', /* pink */
+                '#ffd92f', /* yellow */
+                '#8da0cb', /* blue */
             ],
             fillWeight: 0.5,
             strokeWidth: 0.5,
@@ -70,8 +70,8 @@
         new roughViz.Bar(
         {
             element: '#vis1',
-            data: {labels: ['6.7', '6.5u2', '6.7u1', '6.7u3', '6.5', '6.5u3', '6.7u2'], values: [301, 65, 47, 284, 30, 72, 60]},
-            title: 'Nested ESXi Virtual Appliance (859)',
+            data: {labels: ['6.7', '6.5u3', '6.7u3', '6.7u2', '6.5u2', '6.5', '6.7u1'], values: [237382, 112, 284, 533, 181, 77, 109]},
+            title: 'Nested ESXi Virtual Appliance (238678)',
             labels: 'version',
             values: 'download',
             width: window.innerWidth,
@@ -86,8 +86,8 @@
         new roughViz.Bar(
         {
             element: '#vis2',
-            data: {labels: ['2.6', '3.0'], values: [754, 105]},
-            title: 'Cross vCenter Workload Migration Utility (859)',
+            data: {labels: ['2.6', '3.0'], values: [2399, 105]},
+            title: 'Cross vCenter Workload Migration Utility (2504)',
             labels: 'version',
             values: 'download',
             width: window.innerWidth,
@@ -102,8 +102,8 @@
         new roughViz.Bar(
         {
             element: '#vis3',
-            data: {labels: ['6.5', '6.7'], values: [86, 291]},
-            title: 'USB Network Native Driver for ESXi (377)',
+            data: {labels: ['6.7', '6.5'], values: [892, 232]},
+            title: 'USB Network Native Driver for ESXi (1132)',
             labels: 'version',
             values: 'download',
             width: window.innerWidth,
@@ -134,8 +134,8 @@
         new roughViz.Bar(
         {
             element: '#vis5',
-            data: {labels: ['dvfilter'], values: [125]},
-            title: 'ESXi MAC Learning dvFilter (125)',
+            data: {labels: ['dvfilter'], values: [403]},
+            title: 'ESXi MAC Learning dvFilter (403)',
             labels: 'version',
             values: 'download',
             width: window.innerWidth,
