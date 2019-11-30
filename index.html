@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/rough-viz@1.0.5"></script>
+    <style>
+        .wrapper {
+        display: flex;
+        flex: wrap;
+        order: row;
+        }
+    </style>
+</head>
+
+<body>
+    <br><br>
+    <div class="wrapper">
+        <div id="vis0"></div>
+    </div>
+    <br><br>
+    <div class="wrapper">
+        <div id="vis1"></div>
+    </div>
+    <br><br>
+    <div class="wrapper">
+        <div id="vis2"></div>
+    </div>
+    <br><br>
+    <div class="wrapper">
+        <div id="vis3"></div>
+    </div>
+    <br><br>
+    <div class="wrapper">
+        <div id="vis4"></div>
+    </div>
+    <br><br>
+    <div class="wrapper">
+        <div id="vis5"></div>
+    </div>
+
+    <script>
+        new roughViz.StackedBar({
+            element: '#vis0',
+            data: [
+                {month: 'Sep-to-Oct','ESXi USB NIC':260,'vCenter Event Broker Appliance':0,'ESXi Virtual Appliance':599,'Cross vCenter vMotion':546,'ESXi dvFilter':92},
+{month: 'Oct-to-Nov','ESXi USB NIC':66,'vCenter Event Broker Appliance':1,'ESXi Virtual Appliance':119,'Cross vCenter vMotion':132,'ESXi dvFilter':14},
+{month: 'Nov-to-Nov','ESXi USB NIC':51,'vCenter Event Broker Appliance':26,'ESXi Virtual Appliance':141,'Cross vCenter vMotion':181,'ESXi dvFilter':19},
+
+            ],
+            labels: 'month',
+            title: 'VMware Fling Summary',
+            height: window.innerHeight * 0.7,
+            width: window.innerWidth * 0.8,
+            roughness: 2,
+            colors: [
+                'skyblue',
+                '#66c2a5',
+                '#ffd92f',
+                '#8da0cb',
+                '#e78ac3',
+                '#a6d854',
+            ],
+            fillWeight: 0.5,
+            strokeWidth: 0.5,
+            fillStyle: 'cross-hatch',
+            legend: true,
+            stroke: 'black'}
+        );
+    </script>
+    <script>
+        new roughViz.Bar(
+        {
+            element: '#vis1',
+            data: {labels: ['6.7', '6.5u2', '6.7u1', '6.7u3', '6.5', '6.5u3', '6.7u2'], values: [301, 65, 47, 284, 30, 72, 60]},
+            title: 'Nested ESXi Virtual Appliance (859)',
+            labels: 'version',
+            values: 'download',
+            width: window.innerWidth,
+            stroke: '#66c2a5',
+            strokeWidth: 3,
+            color: '#66c2a5',
+            axisFontSize: '1.4rem',
+            fillWeight: 1.5,
+        });
+    </script>
+    <script>
+        new roughViz.Bar(
+        {
+            element: '#vis2',
+            data: {labels: ['2.6', '3.0'], values: [754, 105]},
+            title: 'Cross vCenter Workload Migration Utility (859)',
+            labels: 'version',
+            values: 'download',
+            width: window.innerWidth,
+            stroke: '#e78ac3',
+            strokeWidth: 3,
+            color: '#e78ac3',
+            axisFontSize: '1.4rem',
+            fillWeight: 1.5,
+        });
+    </script>
+    <script>
+        new roughViz.Bar(
+        {
+            element: '#vis3',
+            data: {labels: ['6.5', '6.7'], values: [86, 291]},
+            title: 'USB Network Native Driver for ESXi (377)',
+            labels: 'version',
+            values: 'download',
+            width: window.innerWidth,
+            stroke: 'skyblue',
+            strokeWidth: 3,
+            color: 'skyblue',
+            axisFontSize: '1.4rem',
+            fillWeight: 1.5,
+        });
+    </script>
+    <script>
+        new roughViz.Bar(
+        {
+            element: '#vis4',
+            data: {labels: ['0.1.0'], values: [27]},
+            title: 'vCenter Event Broker Appliance (27)',
+            labels: 'version',
+            values: 'download',
+            width: window.innerWidth,
+            stroke: 'ffd92f',
+            strokeWidth: 3,
+            color: 'ffd92f',
+            axisFontSize: '1.4rem',
+            fillWeight: 1.5,
+        });
+    </script>
+    <script>
+        new roughViz.Bar(
+        {
+            element: '#vis5',
+            data: {labels: ['dvfilter'], values: [125]},
+            title: 'ESXi MAC Learning dvFilter (125)',
+            labels: 'version',
+            values: 'download',
+            width: window.innerWidth,
+            stroke: '#a6d854',
+            strokeWidth: 3,
+            color: '#a6d854',
+            axisFontSize: '1.4rem',
+            fillWeight: 1.5,
+        });
+    </script>
+</body>
