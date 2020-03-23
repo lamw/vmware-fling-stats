@@ -41,17 +41,17 @@
         new roughViz.StackedBar({
             element: '#vis0',
             data: [
-                {month: '11-05-to-11-12','ESXi dvFilter':0,'Cross vCenter vMotion':181,'ESXi USB NIC':51,'vCenter Event Broker Appliance':26},
-{month: '12-31-to-01-07','ESXi dvFilter':0,'Cross vCenter vMotion':168,'ESXi USB NIC':254,'vCenter Event Broker Appliance':65},
-{month: '01-07-to-01-14','ESXi dvFilter':0,'Cross vCenter vMotion':387,'ESXi USB NIC':312,'vCenter Event Broker Appliance':25},
-{month: '01-21-to-01-28','ESXi dvFilter':0,'Cross vCenter vMotion':221,'ESXi USB NIC':66,'vCenter Event Broker Appliance':20},
-{month: '01-28-to-02-04','ESXi dvFilter':0,'Cross vCenter vMotion':210,'ESXi USB NIC':56,'vCenter Event Broker Appliance':17},
-{month: '02-04-to-02-11','ESXi dvFilter':0,'Cross vCenter vMotion':141,'ESXi USB NIC':77,'vCenter Event Broker Appliance':17},
-{month: '02-11-to-02-18','ESXi dvFilter':0,'Cross vCenter vMotion':140,'ESXi USB NIC':95,'vCenter Event Broker Appliance':14},
-{month: '02-18-to-02-25','ESXi dvFilter':0,'Cross vCenter vMotion':130,'ESXi USB NIC':70,'vCenter Event Broker Appliance':17},
-{month: '02-25-to-03-03','ESXi dvFilter':0,'Cross vCenter vMotion':151,'ESXi USB NIC':89,'vCenter Event Broker Appliance':9},
-{month: '03-03-to-03-10','ESXi dvFilter':0,'Cross vCenter vMotion':161,'ESXi USB NIC':119,'vCenter Event Broker Appliance':37},
-{month: '03-10-to-03-17','ESXi dvFilter':0,'Cross vCenter vMotion':114,'ESXi USB NIC':83,'vCenter Event Broker Appliance':18},
+                {month: '11-05-to-11-12','ESXi USB NIC':51,'Cross vCenter vMotion':181,'vCenter Event Broker Appliance':26,'ESXi dvFilter':19},
+{month: '12-31-to-01-07','ESXi USB NIC':254,'Cross vCenter vMotion':168,'vCenter Event Broker Appliance':65,'ESXi dvFilter':61},
+{month: '01-07-to-01-14','ESXi USB NIC':312,'Cross vCenter vMotion':387,'vCenter Event Broker Appliance':25,'ESXi dvFilter':115},
+{month: '01-21-to-01-28','ESXi USB NIC':66,'Cross vCenter vMotion':221,'vCenter Event Broker Appliance':20,'ESXi dvFilter':10},
+{month: '01-28-to-02-04','ESXi USB NIC':56,'Cross vCenter vMotion':210,'vCenter Event Broker Appliance':17,'ESXi dvFilter':1},
+{month: '02-04-to-02-11','ESXi USB NIC':77,'Cross vCenter vMotion':141,'vCenter Event Broker Appliance':17,'ESXi dvFilter':16},
+{month: '02-11-to-02-18','ESXi USB NIC':95,'Cross vCenter vMotion':140,'vCenter Event Broker Appliance':14,'ESXi dvFilter':9},
+{month: '02-18-to-02-25','ESXi USB NIC':70,'Cross vCenter vMotion':130,'vCenter Event Broker Appliance':17,'ESXi dvFilter':11},
+{month: '02-25-to-03-03','ESXi USB NIC':89,'Cross vCenter vMotion':151,'vCenter Event Broker Appliance':9,'ESXi dvFilter':5},
+{month: '03-03-to-03-10','ESXi USB NIC':119,'Cross vCenter vMotion':161,'vCenter Event Broker Appliance':37,'ESXi dvFilter':8},
+{month: '03-10-to-03-17','ESXi USB NIC':83,'Cross vCenter vMotion':114,'vCenter Event Broker Appliance':18,'ESXi dvFilter':5},
 
             ],
             labels: 'month',
@@ -77,7 +77,7 @@
         new roughViz.Bar(
         {
             element: '#vis1',
-            data: {labels: ['6.5', '6.7u3', '6.5u2', '6.5u3', '6.7', '7.0', '6.7u2', '6.7u1'], values: [22, 461, 89, 128, 653, 3, 70, 65]},
+            data: {labels: ['6.5', '6.5u3', '6.5u2', '6.7', '7.0', '6.7u1', '6.7u3', '6.7u2'], values: [22, 128, 89, 653, 3, 65, 461, 70]},
             title: 'Nested ESXi Virtual Appliance (1491)',
             labels: 'version',
             values: 'download',
@@ -93,7 +93,7 @@
         new roughViz.Bar(
         {
             element: '#vis2',
-            data: {labels: ['3.0', '3.1', '2.6'], values: [634, 1234, 136]},
+            data: {labels: ['2.6', '3.1', '3.0'], values: [136, 1234, 634]},
             title: 'Cross vCenter Workload Migration Utility (2004)',
             labels: 'version',
             values: 'download',
@@ -109,7 +109,7 @@
         new roughViz.Bar(
         {
             element: '#vis3',
-            data: {labels: ['6.7', '6.5'], values: [1050, 221]},
+            data: {labels: ['6.5', '6.7'], values: [221, 1050]},
             title: 'USB Network Native Driver for ESXi (1272)',
             labels: 'version',
             values: 'download',
@@ -125,7 +125,7 @@
         new roughViz.Bar(
         {
             element: '#vis4',
-            data: {labels: ['0.1.0', '0.2.0', '0.3.0'], values: [125, 94, 46]},
+            data: {labels: ['0.2.0', '0.3.0', '0.1.0'], values: [94, 46, 125]},
             title: 'vCenter Event Broker Appliance (265)',
             labels: 'version',
             values: 'download',
@@ -141,8 +141,8 @@
         new roughViz.Bar(
         {
             element: '#vis5',
-            data: {labels: [], values: []},
-            title: 'ESXi MAC Learning dvFilter (0)',
+            data: {labels: ['esxi-mac-learning-dvfilter', 'dvfilter'], values: [3, 257]},
+            title: 'ESXi MAC Learning dvFilter (260)',
             labels: 'version',
             values: 'download',
             width: window.innerWidth,
