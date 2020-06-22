@@ -34,6 +34,14 @@
     </div>
     <br><br>
     <div class="wrapper">
+        <div id="vis6"></div>
+    </div>
+    <br><br>
+    <div class="wrapper">
+        <div id="vis7"></div>
+    </div>
+    <br><br>
+    <div class="wrapper">
         <div id="vis1"></div>
     </div>
 
@@ -41,17 +49,31 @@
         new roughViz.StackedBar({
             element: '#vis0',
             data: [
-                {month: '11-05-to-11-12','ESXi USB NIC':51,'Cross vCenter vMotion':181,'vCenter Event Broker Appliance':26,'ESXi dvFilter':19},
-{month: '12-31-to-01-07','ESXi USB NIC':254,'Cross vCenter vMotion':168,'vCenter Event Broker Appliance':65,'ESXi dvFilter':61},
-{month: '01-07-to-01-14','ESXi USB NIC':312,'Cross vCenter vMotion':387,'vCenter Event Broker Appliance':25,'ESXi dvFilter':115},
-{month: '01-21-to-01-28','ESXi USB NIC':66,'Cross vCenter vMotion':221,'vCenter Event Broker Appliance':20,'ESXi dvFilter':10},
-{month: '01-28-to-02-04','ESXi USB NIC':56,'Cross vCenter vMotion':210,'vCenter Event Broker Appliance':17,'ESXi dvFilter':1},
-{month: '02-04-to-02-11','ESXi USB NIC':77,'Cross vCenter vMotion':141,'vCenter Event Broker Appliance':17,'ESXi dvFilter':16},
-{month: '02-11-to-02-18','ESXi USB NIC':95,'Cross vCenter vMotion':140,'vCenter Event Broker Appliance':14,'ESXi dvFilter':9},
-{month: '02-18-to-02-25','ESXi USB NIC':70,'Cross vCenter vMotion':130,'vCenter Event Broker Appliance':17,'ESXi dvFilter':11},
-{month: '02-25-to-03-03','ESXi USB NIC':89,'Cross vCenter vMotion':151,'vCenter Event Broker Appliance':9,'ESXi dvFilter':5},
-{month: '03-03-to-03-10','ESXi USB NIC':119,'Cross vCenter vMotion':161,'vCenter Event Broker Appliance':37,'ESXi dvFilter':8},
-{month: '03-10-to-03-17','ESXi USB NIC':83,'Cross vCenter vMotion':114,'vCenter Event Broker Appliance':18,'ESXi dvFilter':5},
+                {month: '11-05-to-11-12','F@H Appliance':0,'vCenter Event Broker Appliance':26,'ESXi USB NIC':51,'Cross vCenter vMotion':181,'ESXi dvFilter':19,'TKG Demo Appliance':0},
+{month: '11-19-to-11-26','F@H Appliance':0,'vCenter Event Broker Appliance':50,'ESXi USB NIC':50,'Cross vCenter vMotion':163,'ESXi dvFilter':22,'TKG Demo Appliance':0},
+{month: '11-26-to-12-03','F@H Appliance':0,'vCenter Event Broker Appliance':35,'ESXi USB NIC':77,'Cross vCenter vMotion':69,'ESXi dvFilter':8,'TKG Demo Appliance':0},
+{month: '12-03-to-12-10','F@H Appliance':0,'vCenter Event Broker Appliance':33,'ESXi USB NIC':66,'Cross vCenter vMotion':169,'ESXi dvFilter':16,'TKG Demo Appliance':0},
+{month: '12-10-to-12-17','F@H Appliance':0,'vCenter Event Broker Appliance':43,'ESXi USB NIC':260,'Cross vCenter vMotion':252,'ESXi dvFilter':50,'TKG Demo Appliance':0},
+{month: '12-17-to-12-24','F@H Appliance':0,'vCenter Event Broker Appliance':99,'ESXi USB NIC':321,'Cross vCenter vMotion':258,'ESXi dvFilter':54,'TKG Demo Appliance':0},
+{month: '12-24-to-12-31','F@H Appliance':0,'vCenter Event Broker Appliance':37,'ESXi USB NIC':249,'Cross vCenter vMotion':167,'ESXi dvFilter':53,'TKG Demo Appliance':0},
+{month: '12-31-to-01-07','F@H Appliance':0,'vCenter Event Broker Appliance':65,'ESXi USB NIC':254,'Cross vCenter vMotion':168,'ESXi dvFilter':61,'TKG Demo Appliance':0},
+{month: '01-07-to-01-14','F@H Appliance':0,'vCenter Event Broker Appliance':25,'ESXi USB NIC':312,'Cross vCenter vMotion':387,'ESXi dvFilter':115,'TKG Demo Appliance':0},
+{month: '01-21-to-01-28','F@H Appliance':0,'vCenter Event Broker Appliance':20,'ESXi USB NIC':66,'Cross vCenter vMotion':221,'ESXi dvFilter':10,'TKG Demo Appliance':0},
+{month: '01-28-to-02-04','F@H Appliance':0,'vCenter Event Broker Appliance':17,'ESXi USB NIC':56,'Cross vCenter vMotion':210,'ESXi dvFilter':1,'TKG Demo Appliance':0},
+{month: '02-04-to-02-11','F@H Appliance':0,'vCenter Event Broker Appliance':17,'ESXi USB NIC':77,'Cross vCenter vMotion':141,'ESXi dvFilter':16,'TKG Demo Appliance':0},
+{month: '02-11-to-02-18','F@H Appliance':0,'vCenter Event Broker Appliance':14,'ESXi USB NIC':95,'Cross vCenter vMotion':140,'ESXi dvFilter':9,'TKG Demo Appliance':0},
+{month: '02-18-to-02-25','F@H Appliance':0,'vCenter Event Broker Appliance':17,'ESXi USB NIC':70,'Cross vCenter vMotion':130,'ESXi dvFilter':11,'TKG Demo Appliance':0},
+{month: '02-25-to-03-03','F@H Appliance':0,'vCenter Event Broker Appliance':9,'ESXi USB NIC':89,'Cross vCenter vMotion':151,'ESXi dvFilter':5,'TKG Demo Appliance':0},
+{month: '03-03-to-03-10','F@H Appliance':0,'vCenter Event Broker Appliance':37,'ESXi USB NIC':119,'Cross vCenter vMotion':161,'ESXi dvFilter':8,'TKG Demo Appliance':0},
+{month: '03-10-to-03-17','F@H Appliance':0,'vCenter Event Broker Appliance':18,'ESXi USB NIC':83,'Cross vCenter vMotion':114,'ESXi dvFilter':5,'TKG Demo Appliance':0},
+{month: '03-17-to-03-24','F@H Appliance':1545,'vCenter Event Broker Appliance':32,'ESXi USB NIC':83,'Cross vCenter vMotion':127,'ESXi dvFilter':17,'TKG Demo Appliance':0},
+{month: '03-24-to-03-31','F@H Appliance':1808,'vCenter Event Broker Appliance':14,'ESXi USB NIC':74,'Cross vCenter vMotion':110,'ESXi dvFilter':5,'TKG Demo Appliance':0},
+{month: '03-31-to-04-07','F@H Appliance':37402,'vCenter Event Broker Appliance':13,'ESXi USB NIC':147,'Cross vCenter vMotion':133,'ESXi dvFilter':28,'TKG Demo Appliance':0},
+{month: '04-07-to-04-14','F@H Appliance':594,'vCenter Event Broker Appliance':6,'ESXi USB NIC':203,'Cross vCenter vMotion':135,'ESXi dvFilter':19,'TKG Demo Appliance':0},
+{month: '04-28-to-05-05','F@H Appliance':175,'vCenter Event Broker Appliance':11,'ESXi USB NIC':167,'Cross vCenter vMotion':121,'ESXi dvFilter':12,'TKG Demo Appliance':0},
+{month: '05-05-to-05-12','F@H Appliance':304,'vCenter Event Broker Appliance':40,'ESXi USB NIC':139,'Cross vCenter vMotion':116,'ESXi dvFilter':30,'TKG Demo Appliance':72},
+{month: '05-12-to-05-19','F@H Appliance':210,'vCenter Event Broker Appliance':27,'ESXi USB NIC':187,'Cross vCenter vMotion':84,'ESXi dvFilter':16,'TKG Demo Appliance':78},
+{month: '06-02-to-06-09','F@H Appliance':88,'vCenter Event Broker Appliance':12,'ESXi USB NIC':308,'Cross vCenter vMotion':129,'ESXi dvFilter':30,'TKG Demo Appliance':15},
 
             ],
             labels: 'month',
@@ -65,6 +87,8 @@
                 '#e78ac3', /* pink */
                 '#ffd92f', /* yellow */
                 '#8da0cb', /* blue */
+                '#A541F4', /* purple */
+                '#F44177, /* red */
             ],
             fillWeight: 0.5,
             strokeWidth: 0.5,
@@ -77,8 +101,8 @@
         new roughViz.Bar(
         {
             element: '#vis1',
-            data: {labels: ['6.5', '6.5u3', '6.5u2', '6.7', '7.0', '6.7u1', '6.7u3', '6.7u2'], values: [22, 128, 89, 653, 3, 65, 461, 70]},
-            title: 'Nested ESXi Virtual Appliance (1491)',
+            data: {labels: ['6.7u1', '6.5', '6.5u2', '6.7u2', '7', '6.7', '7_0', '6.7u3', '7.0', '6.5u3'], values: [142, 57, 202, 167, 7, 1286, 1, 1326, 1154, 420]},
+            title: 'Nested ESXi Virtual Appliance (4762)',
             labels: 'version',
             values: 'download',
             width: window.innerWidth,
@@ -93,8 +117,8 @@
         new roughViz.Bar(
         {
             element: '#vis2',
-            data: {labels: ['2.6', '3.1', '3.0'], values: [136, 1234, 634]},
-            title: 'Cross vCenter Workload Migration Utility (2004)',
+            data: {labels: ['3.1', '30', '2.6', '3.0'], values: [2179, 2, 245, 1611]},
+            title: 'Cross vCenter Workload Migration Utility (4037)',
             labels: 'version',
             values: 'download',
             width: window.innerWidth,
@@ -109,8 +133,8 @@
         new roughViz.Bar(
         {
             element: '#vis3',
-            data: {labels: ['6.5', '6.7'], values: [221, 1050]},
-            title: 'USB Network Native Driver for ESXi (1272)',
+            data: {labels: ['6.5', '6.7', '700'], values: [520, 2571, 511]},
+            title: 'USB Network Native Driver for ESXi (3603)',
             labels: 'version',
             values: 'download',
             width: window.innerWidth,
@@ -125,8 +149,8 @@
         new roughViz.Bar(
         {
             element: '#vis4',
-            data: {labels: ['0.2.0', '0.3.0', '0.1.0'], values: [94, 46, 125]},
-            title: 'vCenter Event Broker Appliance (265)',
+            data: {labels: ['0.2.0', '0.1.0', '0.3.0', 'v0.4.0'], values: [126, 391, 157, 43]},
+            title: 'vCenter Event Broker Appliance (717)',
             labels: 'version',
             values: 'download',
             width: window.innerWidth,
@@ -141,14 +165,46 @@
         new roughViz.Bar(
         {
             element: '#vis5',
-            data: {labels: ['esxi-mac-learning-dvfilter', 'dvfilter'], values: [3, 257]},
-            title: 'ESXi MAC Learning dvFilter (260)',
+            data: {labels: ['dvfilter', 'esxi-mac-learning-dvfilter'], values: [613, 7]},
+            title: 'ESXi MAC Learning dvFilter (620)',
             labels: 'version',
             values: 'download',
             width: window.innerWidth,
             stroke: '#a6d854',
             strokeWidth: 3,
             color: '#a6d854',
+            axisFontSize: '1.4rem',
+            fillWeight: 1.5,
+        });
+    </script>
+    <script>
+        new roughViz.Bar(
+        {
+            element: '#vis6',
+            data: {labels: ['1.0.0.ovf', '1.0.0.ova'], values: [104, 61]},
+            title: 'TKG Demo Appliance (165)',
+            labels: 'version',
+            values: 'download',
+            width: window.innerWidth,
+            stroke: '#A541F4',
+            strokeWidth: 3,
+            color: '#A541F4',
+            axisFontSize: '1.4rem',
+            fillWeight: 1.5,
+        });
+    </script>
+    <script>
+        new roughViz.Bar(
+        {
+            element: '#vis7',
+            data: {labels: ['1.0.1', '1.0.3', '1.0.0', '1.0.4', '1.0.2'], values: [38867, 218, 1191, 559, 1291]},
+            title: 'F@H Appliance (42126)',
+            labels: 'version',
+            values: 'download',
+            width: window.innerWidth,
+            stroke: '#F44177',
+            strokeWidth: 3,
+            color: '#F44177',
             axisFontSize: '1.4rem',
             fillWeight: 1.5,
         });
